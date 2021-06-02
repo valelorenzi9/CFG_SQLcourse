@@ -36,7 +36,7 @@ ORDER BY counts_type DESC;
 
 # FUNCTION
 
-# 1. Create a function that tells if a member has paid for thier membership in the May 2021
+# 1. Create a function that tells if a member has paid for thier membership in May 2021
 
 DELIMITER //
 CREATE FUNCTION has_paid(Payment_Date DATE) 
