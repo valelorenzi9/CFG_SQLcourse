@@ -23,7 +23,7 @@ HAVING COUNT(m.Member_ID) > 3;
 
 # Create a STORED PROCEDURE 
 
-# 1. Update Users table if a user has update their password  
+# 1. Update Users table if a user has updated their password  
 
 DELIMITER // 
 CREATE PROCEDURE UpdatePwd
