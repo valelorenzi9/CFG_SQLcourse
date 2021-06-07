@@ -89,12 +89,12 @@ ON SCHEDULE EVERY '1' MONTH
 STARTS '2021-06-01'
 DO
 BEGIN
-	DECLARE total FLOAT; 
+	DECLARE @total FLOAT; 
 	SELECT @total := SUM(Amount) FROM Payment;
 	INSERT INTO MonthlyRevenue
     (Last_Update, Total_Revenue)
     VALUES
-    (NOW(), total); 
+    (NOW(), @total); 
 END //
 DELIMITER ; 
 
